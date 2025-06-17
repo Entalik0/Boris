@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Кот Борис и Mr. Bebra</title>
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="app">
+        <!-- Главное меню -->
+        <div id="main-menu" class="menu">
+            <h1>😺 Удивительный Кот Борис и Mr. Bebra</h1>
+            <div class="buttons">
+                <button onclick="showSection('sleeping')" class="btn sleeping-btn">🛌 Спящий Борис</button>
+                <button onclick="showSection('angry')" class="btn angry-btn">😾 Злой Борис</button>
+                <button onclick="showSection('happy')" class="btn happy-btn">😺 Весёлый Борис</button>
+                <button onclick="showSection('bebra')" class="btn bebra-btn">🦫 Mr. Bebra</button>
+            </div>
+        </div>
+
+        <!-- Разделы -->
+        <div id="sleeping" class="section hidden">
+            <img src="https://i.ibb.co/pjd158tr/sleeping-boris.jpg" alt="Спящий Борис">
+            <p class="description">Борис сладко спит после тяжёлого дня уничтожения дивана.</p>
+            <button onclick="backToMenu()" class="btn back-btn">← Назад</button>
+        </div>
+
+        <div id="angry" class="section hidden">
+            <img src="https://i.ibb.co/k2RYW8yL/angry-boris.jpg" alt="Злой Борис">
+            <p class="description">Борис в ярости: вы забыли купить ему корм!</p>
+            <button onclick="backToMenu()" class="btn back-btn">← Назад</button>
+        </div>
+
+        <div id="happy" class="section hidden">
+            <img src="https://i.ibb.co/kg9wHJ76/happy-boris.jpg" alt="Весёлый Борис">
+            <p class="description">Борис радуется новому корму и планирует новые шалости.</p>
+            <button onclick="backToMenu()" class="btn back-btn">← Назад</button>
+        </div>
+
+        <!-- Раздел Mr. Bebra -->
+        <div id="bebra" class="section hidden">
+            <img src="https://i.ibb.co/DPvvMppx/mr-bebra.jpg" alt="Mr. Bebra" class="bebra-img">
+            <p class="description">Таинственный Mr. Bebra наблюдает за вами из тени. Он знает всё.</p>
+            <button onclick="backToMenu()" class="btn back-btn">← Назад</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
